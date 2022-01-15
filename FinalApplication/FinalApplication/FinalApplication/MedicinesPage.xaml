@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.MedicinesPage"
+             x:Name="Medicine">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar 
+                Placeholder="Search medicine..." 
+                CancelButtonColor="Orange"
+                PlaceholderColor="Orange"
+                TextColor="Orange"
+                TextTransform="Lowercase"
+                HorizontalTextAlignment="Start"
+                FontSize="Medium"
+                FontAttributes="Italic" />
+            <Button Text="Add" Clicked="Button_Clicked" HeightRequest="50" BackgroundColor="Orange" Margin="40,10" FontSize="20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

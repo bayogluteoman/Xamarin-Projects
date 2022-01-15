@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.TabbedPages"
+             xmlns:local="clr-namespace:FinalApplication"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="Orange"
+            BarTextColor="Black"
+            UnselectedTabColor="Gray"
+            Title="Hello">
+  <!--Pages can be added as references or inline-->
+    <local:MainPage Title="Home" />
+    <NavigationPage Title="Medicines">
+        <x:Arguments>
+            <local:MedicinesPage x:Name="Medicines" Title="Medicines" />
+        </x:Arguments>
+    </NavigationPage>    
+    <local:PharmacyMapPage Title="Map"/>  
+    <local:LoginPage Title="Login" />
+</TabbedPage>
