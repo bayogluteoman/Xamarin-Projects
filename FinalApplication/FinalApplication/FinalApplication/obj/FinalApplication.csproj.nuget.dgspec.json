@@ -57,6 +57,10 @@
             "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[5.0.0.2291, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[5.0.0.2291, )"
             }
           },
           "imports": [

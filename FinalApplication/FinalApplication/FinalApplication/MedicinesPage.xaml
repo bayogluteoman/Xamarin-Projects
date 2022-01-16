@@ -14,7 +14,7 @@
                 HorizontalTextAlignment="Start"
                 FontSize="Medium"
                 FontAttributes="Italic" />
-            <Button Text="Add" Clicked="Button_Clicked" HeightRequest="50" BackgroundColor="Orange" Margin="40,10" FontSize="20"></Button>
+            <Button Text="Add" Clicked="Button_Clicked" HeightRequest="50" BackgroundColor="Orange" Margin="100,10" FontSize="20" CornerRadius="30"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

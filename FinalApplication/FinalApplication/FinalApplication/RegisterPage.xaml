@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FinalApplication.RegisterPage">
+             x:Class="FinalApplication.RegisterPage"
+             Visual="Material">
     <ContentPage.Content>
         <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
@@ -30,7 +31,7 @@
             <Entry Grid.Row="1" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
             <Entry Grid.Row="2" Placeholder="Pharmacy Name" PlaceholderColor="#bababa" FontSize="16"/>
 
-            <Button Text="Register" Clicked="Button_Clicked" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
+                <Button Text="Register" Clicked="Button_Clicked" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" Margin="120,10" CornerRadius="30" VerticalOptions="Start" Grid.Row="3"/>
 
 
 

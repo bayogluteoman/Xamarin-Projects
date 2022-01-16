@@ -8,7 +8,9 @@
             BarBackgroundColor="Orange"
             BarTextColor="Black"
             UnselectedTabColor="Gray"
-            Title="Hello">
+            Title="Hello"
+            Visual="Material"
+            >
   <!--Pages can be added as references or inline-->
     <local:MainPage Title="Home" />
     <NavigationPage Title="Medicines">
@@ -16,6 +18,12 @@
             <local:MedicinesPage x:Name="Medicines" Title="Medicines" />
         </x:Arguments>
     </NavigationPage>    
-    <local:PharmacyMapPage Title="Map"/>  
+    <local:PharmacyMapPage Title="Map"/>
+    <NavigationPage Title="Profiles">
+        <x:Arguments>
+            <local:ProfilePage x:Name="Profiles" Title="Profile" />
+        </x:Arguments>
+    </NavigationPage>
+    
     <local:LoginPage Title="Login" />
 </TabbedPage>

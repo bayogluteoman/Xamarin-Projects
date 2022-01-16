@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FinalApplication.LoginPage">
+             x:Class="FinalApplication.LoginPage"
+             Visual="Material">
     <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
@@ -27,10 +28,9 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Image Source="ProfileImage.png" HeightRequest="90" VerticalOptions="EndAndExpand"/>
             <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>
             <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
-            <Button Text="LogIn"  Clicked="Button_Clicked_1" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
+            <Button Text="LogIn"  Clicked="Button_Clicked_1" Margin="100,0,100,0" CornerRadius="30" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
 
             <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Grid.Row="4" Margin="0,-20,0,0">
                 <Grid>
@@ -46,8 +46,8 @@
             </StackLayout>
 
         </Grid>
-        <Label Text="Dont'Have Account Login?" VerticalOptions="FillAndExpand" Grid.Row="3"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
-        <Button Text="SignUp" Grid.Row="4" BackgroundColor="#3897f0" TextColor="White" Clicked="Button_Clicked" ></Button>
+        <Label Text="Dont'Have Account Login?" VerticalOptions="FillAndExpand" Grid.Row="3"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="0,-40,0,10"/>
+        <Button Text="SignUp" Margin="125,-40,125,40" CornerRadius="30" Grid.Row="4" BackgroundColor="#3897f0" TextColor="White" Clicked="Button_Clicked" ></Button>
 
     </Grid>
 </ContentPage>
