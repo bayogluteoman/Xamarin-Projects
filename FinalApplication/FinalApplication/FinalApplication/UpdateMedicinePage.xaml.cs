@@ -10,12 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace FinalApplication
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PharmacyMapPage : ContentPage
+    public partial class UpdateMedicinePage : ContentPage
     {
-        public PharmacyMapPage()
+        public UpdateMedicinePage()
         {
             InitializeComponent();
-           
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Alert", "Medicine is updated !", "OK");
+            await UpdateMedicine.Navigation.PopAsync();
         }
     }
 }

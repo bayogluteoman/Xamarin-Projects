@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.UpdateMedicinePage"
+             x:Name="UpdateMedicine"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+
+
+
+
+            <Grid Padding="5" Margin="35,10" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"  FontSize="20" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="End">Medicine Name</Label>
+                <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Parol"  FontSize="20" />
+                <Label Grid.Row="1" Grid.Column="0"  FontSize="20" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="End">Medicine Description</Label>
+                <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Information"  FontSize="20" />
+                <Label Grid.Row="2" Grid.Column="0"  FontSize="20" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="End">Medicine Stock</Label>
+                <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="15"  FontSize="20" />
+                <Label Grid.Row="3" Grid.Column="0"  FontSize="20" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="End">Medicine Image</Label>
+                <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text=""  FontSize="20" />
+            </Grid>
+
+
+            <Button Text="Edit" HeightRequest="40" BackgroundColor="Green" TextColor="White" HorizontalOptions="Center" CornerRadius="30" Margin="0,20" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,6 +10,8 @@
             <Entry Placeholder="Medicine Name" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
             <Entry Placeholder="Medicine Description" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
             <Entry Placeholder="Medicine Image" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
+            <Entry Placeholder="Medicine Stock" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
+
             <Button Text="Save" Clicked="Button_Clicked" HeightRequest="50" BackgroundColor="LightGreen" Margin="100,10" FontSize="20" CornerRadius="30"></Button>
         </StackLayout>
     </ContentPage.Content>

@@ -9,8 +9,9 @@ namespace FinalApplication
         public App()
         {
             InitializeComponent();
+            Device.SetFlags(new string[] { "CollectionView_Experimental", "SwipeView_Experimental" });
 
-           MainPage = new TabbedPages();
+            MainPage = new TabbedPages();
         }
 
         protected override void OnStart()

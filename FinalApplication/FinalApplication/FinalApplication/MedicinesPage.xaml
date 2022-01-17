@@ -14,6 +14,72 @@
                 HorizontalTextAlignment="Start"
                 FontSize="Medium"
                 FontAttributes="Italic" />
+
+
+            <ListView x:Name="medicineList" HasUnevenRows="True" ItemsSource="{Binding .}" ItemTapped="medicineList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <SwipeView>
+                                    <SwipeView.LeftItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Delete"
+                                                   BackgroundColor="Red"
+                                                   Invoked="SwipeLeftItem_Invoked"
+                                                   CommandParameter="{Binding .}"/>
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>
+
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Update"
+                                                   BackgroundColor="Green"
+                                                   Invoked="SwipeRightItem_Invoked"
+                                                   CommandParameter="{Binding .}"/>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+
+                                    <Grid Padding="1" Margin="35,0" RowSpacing="1" HeightRequest="60"> 
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackLayout Orientation="Horizontal" >
+                                            <Frame Grid.Column="0" Padding="0" HeightRequest="40" WidthRequest="40" BackgroundColor="Gray" CornerRadius="100" BorderColor="Black" IsClippedToBounds="True" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" >
+                                                <Frame.Content>
+                                                    <Image Source="{Binding Image}" Aspect="Fill"/>
+                                                </Frame.Content>
+                                            </Frame>
+                                        </StackLayout>
+                                        <Label Grid.Column="1"  FontSize="20" Text="{Binding MedicineName}" VerticalTextAlignment="Center" />
+                                        <Label Grid.Column="2"  FontSize="20" Text="{Binding Description}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                        <Label Grid.Column="3"  FontSize="20" Text="{Binding StockNumber}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> 
+                                                                            
+
+                                    </Grid>
+
+                                </SwipeView>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+
+
+           
             <Button Text="Add" Clicked="Button_Clicked" HeightRequest="50" BackgroundColor="Orange" Margin="100,10" FontSize="20" CornerRadius="30"/>
         </StackLayout>
     </ContentPage.Content>

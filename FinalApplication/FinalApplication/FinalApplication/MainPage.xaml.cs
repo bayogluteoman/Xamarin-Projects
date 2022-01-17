@@ -13,6 +13,13 @@ namespace FinalApplication
         public MainPage()
         {
             InitializeComponent();
+            var list = new List<CarouselModel>
+            {
+                new CarouselModel("googleLogo.png","text1"),
+                new CarouselModel("phamacyLogo2.png","text2"),
+
+            };
+            TheCarousel.ItemsSource = list;
         }
     }
 }

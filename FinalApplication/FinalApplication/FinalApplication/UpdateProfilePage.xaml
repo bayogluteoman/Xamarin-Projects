@@ -7,9 +7,10 @@
              BackgroundColor="OrangeRed">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Placeholder="Pharmacy Name" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
-            <Entry Placeholder="Pharmacy Phone" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
-            <Entry Placeholder="Pharmacy Address" PlaceholderColor="Orange" FontSize="16" Margin="20,20"/>
+            <Entry Placeholder="Pharmacy Name" PlaceholderColor="Orange" FontSize="15" Margin="15,15"/>
+            <Entry Placeholder="Pharmacy Phone" PlaceholderColor="Orange" FontSize="15" Margin="15,15"/>
+            <Entry Placeholder="Latitude" PlaceholderColor="Orange" FontSize="15" Margin="15,15"/>
+            <Entry Placeholder="Longitude" PlaceholderColor="Orange" FontSize="15" Margin="15,15"/>
             <Grid Padding="5" Margin="20,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
