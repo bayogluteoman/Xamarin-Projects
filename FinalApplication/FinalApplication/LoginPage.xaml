@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.LoginPage"
+             Visual="Material">
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="20"/>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,0" Grid.Row="0">
+            <Image Source="PharmacyLogo.png" Opacity="1" VerticalOptions="Start" Margin="10,0,0,0"/>
+        </StackLayout>
+        <Label Grid.Row="1" Text="E-MEDICINE" HorizontalOptions="CenterAndExpand" FontSize="18"></Label>
+
+        <Grid RowSpacing="35" Grid.Row="2" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Entry Grid.Row="1" Placeholder="Email" x:Name="eMail" PlaceholderColor="#bababa" FontSize="16"/>
+            <Entry Grid.Row="2" Placeholder="Password" x:Name="password" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
+            <Button Text="LogIn"  Clicked="Login_Button_Clicked" Margin="100,0,100,0" CornerRadius="30" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Grid.Row="4" Margin="0,-20,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="googleLogo.png" Grid.Row="0" VerticalOptions="Center" Margin="-160,0,0,0" HeightRequest="35" WidthRequest="35"/>
+                    <Label Text="Login With Google" Grid.Row="0" TextColor="#485992" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                </Grid>
+            </StackLayout>
+
+        </Grid>
+        <Label Text="Dont'Have Account Login?" VerticalOptions="FillAndExpand" Grid.Row="3"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="0,-40,0,10"/>
+        <Button Text="SignUp" Margin="125,-40,125,40" CornerRadius="30" Grid.Row="4" BackgroundColor="#3897f0" TextColor="White" Clicked="Register_Button_Clicked" ></Button>
+
+    </Grid>
+</ContentPage>

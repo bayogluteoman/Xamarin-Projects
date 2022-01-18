@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.PharmacyInformationPage"
+             Title="Pharmacy">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10">
+                <Frame Padding="0" HeightRequest="100" WidthRequest="100" BackgroundColor="Gray" CornerRadius="100" BorderColor="Black" IsClippedToBounds="True">
+                    <Frame.Content>
+                        <Image Source="pharmacist.jpg" Aspect="Fill"/>
+                    </Frame.Content>
+                </Frame>
+            </StackLayout>
+
+            <Grid Padding="5" Margin="35,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"  FontSize="20" TextColor="Black">Pharmacy Name</Label>
+                <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Gözde Eczanesi"  FontSize="20" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.Column="0"  FontSize="20" TextColor="Black">Pharmacy Phone</Label>
+                <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="0(222) 222 22 22"  FontSize="20" HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="0"  FontSize="20" TextColor="Black">Pharmacy Address</Label>
+                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Üniversite Cd."  FontSize="20" HorizontalOptions="Center"/>
+                <Label Grid.Row="4" Grid.Column="0" VerticalTextAlignment="Center" FontSize="20" TextColor="Black">Working days</Label>
+                <Label Grid.Row="5" Grid.Column="0" VerticalTextAlignment="Center" FontSize="20" TextColor="Black">Working hours</Label>
+                <Label Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" FontSize="20" TextColor="Black">From</Label>
+                <Label Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" FontSize="20" TextColor="Black">To</Label>
+
+                <Label Grid.Row="5" Grid.Column="1" Text="08:00"  FontSize="20" HorizontalOptions="Center"  />
+                <Label Grid.Row="5" Grid.Column="2" Text="17:00"  FontSize="20" HorizontalOptions="Center"/>
+                <Label Grid.Row="4" Grid.Column="1" Text="01/01/2022"  FontSize="20" HorizontalOptions="Center"/>
+                <Label Grid.Row="4" Grid.Column="2" Text="06/01/2022"  FontSize="20" HorizontalOptions="Center"/>
+
+            </Grid>
+            <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold,Italic">Medicines</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0"  FontSize="20" TextColor="Black" FontAttributes="Italic">Parol</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0"  FontSize="20" TextColor="Black" FontAttributes="Italic">Majezik</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0"  FontSize="20" TextColor="Black" FontAttributes="Italic">Diltizem</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0"  FontSize="20" TextColor="Black" FontAttributes="Italic">Nurofen</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0"  FontSize="20" TextColor="Black" FontAttributes="Italic">Dolarex</Label>
+            <Label HorizontalTextAlignment="Start" Margin="40,0,0,10"  FontSize="20" TextColor="Black" FontAttributes="Italic" >Aferin</Label>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

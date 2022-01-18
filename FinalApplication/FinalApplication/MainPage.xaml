@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.MainPage"
+            >
+        <ContentPage.Content>
+            <StackLayout>
+               
+
+                <CarouselView
+            x:Name="TheCarousel"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            IndicatorView="indicatorview"
+                HeightRequest="270"
+                Margin="0,10">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       CornerRadius="100"
+                       Margin="20"
+                       HeightRequest="270"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+                                <AbsoluteLayout>
+                                    <StackLayout
+                            AbsoluteLayout.LayoutBounds=
+                            "0.5,0.3,AutoSize,AutoSize"
+                            AbsoluteLayout.LayoutFlags=
+                            "PositionProportional"
+                            HorizontalOptions="Center">
+                                        <!--<Label
+                                FontSize="Title"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding .}"
+                                VerticalOptions="Center" />-->
+
+                                        <Image Source="{Binding url}"
+                               Aspect="AspectFill"
+                               HeightRequest="150"
+                               WidthRequest="450"
+                               HorizontalOptions="StartAndExpand"
+                                               VerticalOptions="StartAndExpand" Margin="0,-20,0,0"/>
+
+                                        <Label Text="{Binding text}" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                    </StackLayout>
+                                </AbsoluteLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView
+            x:Name="indicatorview"
+            AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            IndicatorColor="LightGray"
+            IndicatorSize="10"
+            SelectedIndicatorColor="Black" />
+            <Label TextColor="Orange" FontSize="20" Margin="25,0" FontAttributes="Bold">Our pharmacies</Label>
+            <ScrollView>
+               
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="180"/>
+                        <RowDefinition Height="180"/>
+                        <RowDefinition Height="180"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy1</Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="0"
+                       Grid.Column="1">
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy2</Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="1"
+                       Grid.Column="0">
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy3</Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="1"
+                       Grid.Column="1">
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy4</Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                           >
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18" >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy5</Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       Margin="20"
+                       HeightRequest="70"
+                   WidthRequest="70"
+                       Grid.Row="2"
+                       Grid.Column="1">
+                        <StackLayout>
+                            <Image Source="pharmacy.jpg" Aspect="Fill" HeightRequest="120" Margin="-17.7,-18">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                     Tapped="TapGestureRecognizer_Tapped"
+                                     NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            
+                            <Label Margin="0,10" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold">Pharmacy6</Label>
+
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+        </ScrollView>
+    </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

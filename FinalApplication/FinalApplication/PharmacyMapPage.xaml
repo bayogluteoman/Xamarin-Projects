@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="FinalApplication.PharmacyMapPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map IsShowingUser="False" x:Name="Map" >
+                <x:Arguments>
+                    <maps:MapSpan>
+                        <x:Arguments>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>39.770881</x:Double>
+                                    <x:Double>30.524326</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                            <x:Double>0.01</x:Double>
+                            <x:Double>0.01</x:Double>
+                        </x:Arguments>
+                    </maps:MapSpan>
+                </x:Arguments>
+                <maps:Map.Pins>
+                    <maps:Pin Label="Gözde Eczanesi"
+                       Type="Place">
+                        <maps:Pin.Position>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>39.770881</x:Double>
+                                    <x:Double>30.524326</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:Pin.Position>
+                    </maps:Pin>
+                    <maps:Pin Label="Erman Eczanesi"
+                       Type="Place">
+                        <maps:Pin.Position>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>39.772881</x:Double>
+                                    <x:Double>30.52326</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:Pin.Position>
+                    </maps:Pin>
+                    <maps:Pin Label="Elif Eczanesi"
+                       Type="Place">
+                        <maps:Pin.Position>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>39.775881</x:Double>
+                                    <x:Double>30.52326</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:Pin.Position>
+                    </maps:Pin>
+                </maps:Map.Pins>
+            </maps:Map>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

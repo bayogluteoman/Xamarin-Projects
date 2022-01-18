@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApplication.RegisterPage"
+             Visual="Material">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="20"/>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,0" Grid.Row="0">
+            <Image Source="PharmacyLogo.png" Opacity="1" VerticalOptions="Start" Margin="10,0,0,0"/>
+        </StackLayout>
+        <Label Grid.Row="1" Text="E-MEDICINE" HorizontalOptions="CenterAndExpand" FontSize="18"></Label>
+
+        <Grid RowSpacing="35" Grid.Row="2" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Entry Grid.Row="0" Placeholder="Email" x:Name="eMail" PlaceholderColor="#bababa" FontSize="16"/>
+            <Entry Grid.Row="1" Placeholder="Password" x:Name="password" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
+            <Entry Grid.Row="2" Placeholder="Pharmacy Name" x:Name="pharmacyName" PlaceholderColor="#bababa" FontSize="16"/>
+            <Button Text="Register" Clicked="Register_Button_Clicked" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" Margin="120,10" CornerRadius="30" VerticalOptions="Start" Grid.Row="3"/>
+            
+        </Grid>
+
+    </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>
